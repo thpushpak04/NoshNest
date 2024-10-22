@@ -1,0 +1,433 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2 {
+    background-color: #333;
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: center;
+    color: hsl(0, 3%, 94%);
+}
+
+h1 {
+    color: #e5e5e5;
+    font-size: xx-large;
+    background-color: #333;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Header */
+.header {
+    background-color: hsl(22, 70%, 48%);
+    padding: 20px;
+    border-bottom: 2px solid #e5e5e5;
+}
+
+.top-bar, .header-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 300px;
+    height: 180px;
+    display: block;
+}
+
+.header-links a {
+    font-size: x-large;
+    margin-left: 15px;
+    color: hsl(0, 14%, 96%);
+    font-weight: bold;
+}
+
+.header-links a:hover {
+    color: #d52e2e;
+}
+
+/* Profile Image */
+.top-right img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Menu Sections */
+.menu-section, .burger-menu, .pizza-menu {
+    padding: 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.menu-grid, .burger-grid, .pizza-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu-item, .burger-item, .pizza-item {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    padding: 20px;
+}
+
+p{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.menu-item img, .pizza-item img, .burger-item img {
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item:hover, .pizza-item:hover, .burger-item:hover {
+    transform: scale(1.05);
+}
+
+/* Special Deal Section */
+.special-deal {
+    position: relative;
+    padding: 30px 0;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.special-deal img {
+    width: 100vw;
+    height: auto;
+}
+
+.deal-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 102, 19, 0.8);
+    color: #fff;
+    padding: 15px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Order Section */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.order-section {
+    flex: 0.6;
+    background-color: hwb(63 4% 6%);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.order-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.item-description {
+    flex: 1;
+    padding-left: 40px;
+}
+
+.item-name {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.item-options button {
+    margin: 0 5px;
+}
+
+.summary-section {
+    flex: 0.3;
+    background-color: #ed4848;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.donation-box {
+    margin-bottom: 20px;
+}
+
+.total-box p {
+    font-size: 18px;
+}
+
+/* Contact Form Section */
+.contact-section {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: hsl(22, 70%, 48%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: hsl(22, 70%, 60%);
+}
+
+/* Login Page */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.login-card {
+    background-color: #fff;
+    padding: 30px;
+    width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.login-logo {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px;
+    background-color: hsl(22, 70%, 48%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(22, 70%, 60%);
+}
+
+.google-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.google-login img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.terms {
+    font-size: 12px;
+    color: #666;
+    margin-top: 20px;
+}
+
+.terms a {
+    color: hsl(22, 70%, 48%);
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer-links {
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    margin: 0 15px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* about section content*/
+
+.about-noshnest {
+    background-color: #f8f8f8;
+    padding: 50px 20px;
+    text-align: left;
+}
+
+.about-noshnest .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about-noshnest h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-noshnest p {
+    font-size: large;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.about-noshnest ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-noshnest ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.about-noshnest a {
+    color: #d52e2e;
+    text-decoration: none;
+}
+
+.about-noshnest a:hover {
+    text-decoration: underline;
+}
+
+.about-noshnest img {
+    margin: 20px 10px;
+    max-width: 150px;
+}
+
+  /* Container for payment html webpage*/
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .order-section, .summary-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .order-section {
+    width: 60%;
+  }
+  
+  .summary-section {
+    width: 35%;
+  }
+  
+  .total-box p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .buy-now {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .buy-now:hover {
+    background-color: #ff4500;
+  }
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header-links, .top-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-grid, .burger-grid, .pizza-grid {
+        flex-direction: column;
+    }
+
+    .menu-item, .burger-item, .pizza-item {
+        margin: 20px 0;
+    }
+}

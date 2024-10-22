@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Page - NoshNest</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="header">
+    <div class="top-bar">
+        <!-- Logo Section -->
+        <div class="logo">
+            <!-- Direct link to the image file from ibb.co -->
+            <a href="index.html" target="_self" class="logo"> <img src="https://i.ibb.co/r5XgZR6/noshnest-download-logo-removebg-preview-2.png" width="170" height="100" alt="NoshNest Logo"></a>
+        </div>
+        
+        <!-- Delivery & Dine-in Options -->
+        <div class="toggle-options">
+          
+            <div><a href="index.html" target="_self"><h1>HOME</h1></a></div>
+            <label for="delivery-toggle">Delivery</label>
+            <input type="checkbox" id="delivery-toggle" checked>
+            <label for="delivery-toggle">Dine-In/Takeaway</label>
+        </div>
+
+        <!-- Right Section with Links and Icons -->
+        <div class="top-right">
+            <!--<span>No stores nearby</span>-->
+            <div class="header-links">
+                <!-- Nearby Stores -->
+                <a href="***" class="header-item">
+                    <img src="https://i.ibb.co/W3KtZrb/Gemini-Generated-Image-5co9tt5co9tt5co9.jpg" alt="Nearby Stores Icon" width="30" height="30">
+                    <!--Nearby Stores-->
+                </a>
+
+                <!-- Happy Deals -->
+                <a href="***" class="header-item">
+                    <img src="https://i.ibb.co/k6h988n/Gemini-Generated-Image-sibytasibytasiby.jpg" alt="Deals Icon" width="30" height="30">
+                    <!--Happy Deals-->
+                </a>
+
+                <!-- Cart -->
+                <a href="payment.html" class="header-item">
+                    <img src="https://i.ibb.co/q1dcrRH/Gemini-Generated-Image-vevbdnvevbdnvevb.jpg" alt="Cart Icon" width="30" height="30">
+                    <!--Cart-->
+                </a>
+
+                <!-- Login -->
+                <a href="login.html" class="header-item">
+                    <img src="https://i.ibb.co/mHB6w3J/eps10-black-user-icon-or-logo-in-simple-flat-trendy-modern-style-isolated-on-white-background-free-v.jpg" alt="Login Icon" width="30" height="30">
+                    <!--Login-->
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+  <!-- Main Container -->
+  <div class="container">
+    <!-- Order Section -->
+    <div class="order-section">
+      <h2>Your Order</h2>
+      <ul class="order-list">
+        <!-- Orders will be dynamically generated using JavaScript -->
+      </ul>
+    </div>
+
+    <!-- Summary Section -->
+    <div class="summary-section">
+      <h2>Summary</h2>
+      <div class="total-box">
+        <p>Total Payable: ₹ <span id="total-payable">0</span></p>
+        <p>Sub Total: ₹ <span id="sub-total">0.00</span></p>
+        <p>CGST: ₹ <span id="cgst">0.00</span></p>
+        <p>SGST: ₹ <span id="sgst">0.00</span></p>
+      </div>
+      <button class="buy-now" onclick="redirectToPayment()">Proceed to Payment</button>
+    </div>
+  </div>
+
+  <!-- Burger Menu Section -->
+  <section class="burger-menu">
+    <h2>Our Delicious Burgers</h2>
+    <div class="burger-grid">
+      <div class="burger-item" data-name="Classic Burger" data-price="100">
+        <img src="https://i.ibb.co/C142TLR/image-6.webp" alt="Classic Burger">
+        <h3>SMALL SIZE - ₹100</h3>
+        <button class="buy-now" onclick="addToCart('Classic Burger', 100)">Buy Now</button>
+      </div>
+      <div class="burger-item" data-name="Cheese Burger" data-price="220">
+        <img src="https://i.ibb.co/Fg0DWYn/image-7.webp" alt="Cheese Burger">
+        <h3>MEDIUM SIZE - ₹220</h3>
+        <button class="buy-now" onclick="addToCart('Cheese Burger', 220)">Buy Now</button>
+      </div>
+      <div class="burger-item" data-name="Bacon Burger" data-price="310">
+        <img src="https://i.ibb.co/YRZdn94/image-8.webp" alt="Bacon Burger">
+        <h3>LARGE SIZE - ₹310</h3>
+        <button class="buy-now" onclick="addToCart('Bacon Burger', 310)">Buy Now</button>
+      </div>
+      <div class="burger-item" data-name="Spicy Burger" data-price="390">
+        <img src="https://i.ibb.co/Ph554zd/Untitled-design.jpg" alt="Spicy Burger">
+        <h3>FAMILY SIZE EXTRA - ₹390</h3>
+        <button class="buy-now" onclick="addToCart('Spicy Burger', 390)">Buy Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-links">
+      <p>Location: NEW DELHI</p>
+      <a href="#">Contact Us</a>
+      <a href="#">Help</a>
+      <a href="#">Report a Problem</a>
+    </div>
+    <p>&copy; 2024 NoshNest. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
